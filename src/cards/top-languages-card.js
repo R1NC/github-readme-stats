@@ -66,6 +66,7 @@ const renderTopLanguages = (topLangs, options = {}) => {
     hide_title,
     hide_border,
     card_width,
+    line_height = 25,
     title_color,
     text_color,
     bg_color,
@@ -73,6 +74,8 @@ const renderTopLanguages = (topLangs, options = {}) => {
     theme,
     layout,
   } = options;
+  
+  const lheight = parseInt(line_height, 10);
 
   let langs = Object.values(topLangs);
   let langsToHide = {};
@@ -167,7 +170,7 @@ const renderTopLanguages = (topLangs, options = {}) => {
           progress: ((lang.size / totalLanguageSize) * 100).toFixed(2),
         });
       }),
-      gap: 40,
+      gap: lheight,
       direction: "column",
     }).join("");
   }
