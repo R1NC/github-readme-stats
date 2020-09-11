@@ -17,6 +17,7 @@ module.exports = async (req, res) => {
     hide_title,
     hide_border,
     card_width,
+    line_height,
     title_color,
     text_color,
     bg_color,
