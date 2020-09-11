@@ -108,14 +108,14 @@ const renderTopLanguages = (topLangs, options = {}) => {
   });
 
   let width = isNaN(card_width) ? 300 : card_width;
-  let height = 45 + (langs.length + 1) * 40;
+  let height = 45 + (langs.length + 1) * lheight;
 
   let finalLayout = "";
 
   // RENDER COMPACT LAYOUT
   if (layout === "compact") {
     width = width + 50;
-    height = 30 + (langs.length / 2 + 1) * 40;
+    height = 30 + (langs.length / 2 + 1) * lheight;
 
     // progressOffset holds the previous language's width and used to offset the next language
     // so that we can stack them one after another, like this: [--][----][---]
