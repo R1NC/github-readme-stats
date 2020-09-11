@@ -50,6 +50,7 @@ module.exports = async (req, res) => {
         hide_border: parseBoolean(hide_border),
         card_width: parseInt(card_width, 10),
         hide: parseArray(hide),
+        line_height,
         title_color,
         text_color,
         bg_color,
